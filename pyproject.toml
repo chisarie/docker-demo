@@ -1,0 +1,21 @@
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata 
+# https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["mydebug"]
+
+[tool.black]
+line-length = 100
+
+[project]
+name = "mydebug"
+version = "0.0.1"
+authors = [{ name = "Eugenio Chisari", email = "eugenio.chisari@gmail.com" }]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
